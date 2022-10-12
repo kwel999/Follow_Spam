@@ -8,7 +8,7 @@ Apt update
 apt upgrade
 pkg install python
 pkg install git
-pip install amino.py
+pip install amino.fix
 pip install colorama
 pip install pyfiglet
 git clone https://github.com/kwel999/Follow_Spam
