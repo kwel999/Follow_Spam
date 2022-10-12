@@ -11,5 +11,6 @@ pkg install git
 pip install amino.py
 pip install colorama
 pip install pyfiglet
-git clone 
+git clone https://github.com/kwel999/Follow_Spam
 python main.py
+```
