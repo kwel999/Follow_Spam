@@ -1,4 +1,4 @@
-amino.py
+aminofix
 asyncio
 colorama
 pyfiglet
