@@ -14,7 +14,7 @@ from colorama import init, Fore, Back, Style
 init()
 print(
 print(Fore.RED+ Style.BRIGHT)
-print(pyfiglet.figlet_format("KWEL ATE YOUR PIZZA", font="big"))
+print(pyfiglet.figlet_format("FOLLOW SPAM", font="big"))
 client = aminofix.AsyncClient()
 print("\t\033[1;32m Subscribe To \033[1;36mhttps://youtube.com/c/KWELATEYOURPIZZA\n\n")
 async def authorization():
