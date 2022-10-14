@@ -1,5 +1,5 @@
 import asyncio
-import aminofix.asyncfix as aminofix
+import aminofix.asyncfix
 try:
     import colorama
 except ModuleNotFoundError:
@@ -14,7 +14,7 @@ from colorama import init, Fore, Back, Style
 init()
 print(Fore.RED+ Style.BRIGHT)
 print(pyfiglet.figlet_format("KWEL ATE YOUR PIZZA", font="big"))
-client = aminofix.Client()
+client = aminofix.asyncfix.Client()
 print("\t\033[1;32m Follow Spam \033[1;36mKWEL \n\n")
 async def authorization():
     try:
@@ -43,7 +43,7 @@ async def follow_spam(user_ids, sub_client):
 async def main():
     await authorization()
     com_id = await choice_community()
-    aminofix.SubClient(comId=com_id, profile=client.profile)
+    sub_client = aminofix.asyncfix.SubClient(comId=com_id, profile=client.profile)
     user_ids = (await sub_client.get_online_users(start=0, size=100)).profile.userId
     task_count = int(input(" •°•°•°How many times >>  "))
     while True:
