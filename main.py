@@ -12,7 +12,7 @@ except ModuleNotFoundError:
     import pyfiglet
 from colorama import init, Fore, Back, Style
 init()
-print(
+print()
 print(Fore.RED+ Style.BRIGHT)
 print(pyfiglet.figlet_format("FOLLOW SPAM", font="big"))
 client = aminofix.AsyncClient()
